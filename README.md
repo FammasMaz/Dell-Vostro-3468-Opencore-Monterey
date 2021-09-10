@@ -59,9 +59,14 @@ IntelBluetoothFirmware: https://github.com/OpenIntelWireless/IntelBluetoothFirmw
 
 ## Changelog:
 
-__9 Sep 2021__ 
+__11 Sep 2021__
 
-* Use Custom SSDTs for Brightness key fix and decluttering
+* Bump min frequency back to TDP-Down Frequency after observing some crashes
+
+9 Sep 2021 
+
+* Use Custom SSDTs for Brightness Key mapping to F11/F12 
+* Decluttering
 * Use CPUFriend to reduce the min freq to absolute minimum for this kabylake piece of shit
 
 
