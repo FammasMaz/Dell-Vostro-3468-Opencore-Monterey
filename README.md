@@ -16,11 +16,11 @@ __Touchpad__: Synaptics I2C
 
 __Speakers__: Realtek ALC256 Audio Controller
 
-__Wifi/Bluetooth__: Intel 3165AC (Changed the previously installed card, Google a better card for this laptop if you want)
+__Wifi/Bluetooth__: fenvi VCM BCM94352Z (Changed the previously installed card, Google a better card for this laptop if you want)
 
 For more details, Google is your best friend
 
-## Opencore Version: __0.7.3__
+## Opencore Version: __0.8.2__
 
 ## What's Working?
 
@@ -33,49 +33,62 @@ This laptop will be supported as long I have it. As of now, the following things
 | Keyboard | __Working__ | Swap Modifier Keys in SysPrefs if wanted |
 | Trackpad | __Working__ | Working with all gestures, might improve in the future |
 | Brightness Controls | __Working__ | Working with keys mapped correctly to F11 and F12 :) |
-| Audio | __Working__ | Use ComboJack for headphones and external mic. Function keys mapped correctly | 
-| Wifi | __Working (Conditional)__ | Use a compatible wifi card. This repo uses Intel 3165AC. Works fine |
-| Bluetooth | __Partially Working__ | Only works when Wifi is Off and doesn't play to bluetooth earphones |
+| Audio | __Working__ | Use ComboJack for headphones and external mic. Function keys mapped correctly |
+| Wifi | __Working (Conditional)__ | Use a compatible wifi card. This repo uses ~Intel 3165AC~ fenvi BCM94352Z. Works fine |
+| Bluetooth | __Working__ | Even the Continuity Features works cuz native :P |
 | Sleep | __Working__ | Laptop goes to the S3 Sleep state just fine |
 | SD Card Reader | __Not Working__ | Will never work |
-| HDMI | __Not Tested__ | Should work tho |
-| USB Ports | __Working__ | Properly Mapped |
+| HDMI | __Working__ | Empty Space cuz it will look like shit if I dont write something here |
+| USB Ports | __Working__ | Properly Mapped (Finally) |
 | Battery Status | __Working__ | Correct Readouts |
-| iServices | __Not Working__ | Easy Fix, just update Platform Info by following Dortainia [Guide here](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html) 
+| iServices | __Serial Info Needed__ | Easy Fix, just update Platform Info by following Dortainia [Guide here](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html)
 
 ## Notes for Big Sur
 
-Change itlwm with Big Sur version until I have time to create a seperate branch for it. Also, remove the Bluetool Kext and replace with Injector in the Intel Bluetooth Firmware zip.
+~Change itlwm with Big Sur version until I have time to create a seperate branch for it. Also, remove the Bluetool Kext and replace with Injector in the Intel Bluetooth Firmware zip.~
 
-itlwm: https://github.com/OpenIntelWireless/itlwm
+In case that you have Intel Wifi/Bluetooth use this stuff given sous-ci:
+* itlwm: https://github.com/OpenIntelWireless/itlwm
 
-IntelBluetoothFirmware: https://github.com/OpenIntelWireless/IntelBluetoothFirmware
+* IntelBluetoothFirmware: https://github.com/OpenIntelWireless/IntelBluetoothFirmware
+
+__Since the latest version of my EFI, this is no longer included or recommended__
 
 ## Misc. Notes
 
-* The USB Port mapping might be different for you, so please use USBInjectAll.kext and do proper mapping through Hackintool
+* ~The USB Port mapping might be different for you, so please use USBInjectAll.kext and do proper mapping through Hackintool~
 * For iServices use the [Dortania Guide](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html)
-* Although I tested it, if you feel 400Mhz min frequency is too low to be unstable, change it using CPUFriend Guide [here](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html)
+* ~Although I tested it, if you feel 400Mhz min frequency is too low to be unstable, change it using CPUFriend Guide [here](https://dortania.github.io/OpenCore-Post-Install/universal/pm.html)~
+
+Well it turns out this is just not recommended since native management works just fine
 
 ## Changelog:
+
+__8 Sep 2022__ What the fuck took me an year to edit this changelog
+
+* Updated OpenCore (`0.7.5` --> `0.8.2`)
+* Fixed some assholery
+* Fixed some more assholery
+* Added some assholery
+
 
 __11 Sep 2021__
 
 * Bump min frequency back to TDP-Down Frequency after observing some crashes
 
-9 Sep 2021 
+9 Sep 2021
 
-* Use Custom SSDTs for Brightness Key mapping to F11/F12 
+* Use Custom SSDTs for Brightness Key mapping to F11/F12
 * Decluttering
 * Use CPUFriend to reduce the min freq to absolute minimum for this kabylake piece of shit
 
 
-8 Sep 2021: 
+8 Sep 2021:
 
 * Updated Kexts
 * OpenCore Bump (`0.7.2` --> `0.7.3`)
 
-7 Sep 2021: 
+7 Sep 2021:
 
 * Fix Some Broken Stuff
 
@@ -92,6 +105,4 @@ __11 Sep 2021__
 * CPUFriend
 * Random TonyMacx86 Guides
 * Rehabman
-* All the stress turning this repo in a psychological escape from my crippling anxiety 
-
-
+* All the stress turning this repo in a psychological escape from my crippling anxiety
