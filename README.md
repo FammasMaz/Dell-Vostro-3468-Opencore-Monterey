@@ -1,6 +1,6 @@
-# Opencore For macOS Monterey
+# Opencore For macOS Ventura
 
-This is a vanilla Opencore Bootloader made specifically for the laptop with Custom ACPI Patches. This repo will be updated till the death of my laptop or me. __Along wth Monterey, this bootloader is working with Big Sur and Catalina as well but requires some tweaks, see notes.__
+This is a vanilla Opencore Bootloader made specifically for the laptop with Custom ACPI Patches. This repo will be updated till the death of my laptop or me. __Along wth Ventura, this bootloader is working with Monterey, Big Sur and Catalina as well but requires some tweaks, see notes.__
 
 ## Laptop Specifications
 
@@ -20,7 +20,7 @@ __Wifi/Bluetooth__: fenvi VCM BCM94352Z (Changed the previously installed card, 
 
 For more details, Google is your best friend
 
-## Opencore Version: __0.8.2__
+## Opencore Version: __0.8.5__
 
 ## What's Working?
 
@@ -63,6 +63,10 @@ __Since the latest version of my EFI, this is no longer included or recommended_
 Well it turns out this is just not recommended since native management works just fine
 
 ## Changelog:
+
+__4 Nov 2022__
+
+* Updated OpenCore (`0.8.2` --> `0.8.5`)
 
 __8 Sep 2022__ What the fuck took me an year to edit this changelog
 
