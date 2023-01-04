@@ -64,6 +64,10 @@ Well it turns out this is just not recommended since native management works jus
 
 ## Changelog:
 
+__4 Jan 2023__
+
+* Updated OpenCore (`0.8.5` --> `0.8.8`)
+
 __4 Nov 2022__
 
 * Updated OpenCore (`0.8.2` --> `0.8.5`)
