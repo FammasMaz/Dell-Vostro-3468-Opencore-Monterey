@@ -20,7 +20,7 @@ __Wifi/Bluetooth__: fenvi VCM BCM94352Z (Changed the previously installed card, 
 
 For more details, Google is your best friend
 
-## Opencore Version: __0.8.5__
+## Opencore Version: __0.9.0__
 
 ## What's Working?
 
@@ -63,6 +63,10 @@ __Since the latest version of my EFI, this is no longer included or recommended_
 Well it turns out this is just not recommended since native management works just fine
 
 ## Changelog:
+
+__11 Mar 2023__
+
+* Updated OpenCore (`0.8.8` --> `0.9.0`)
 
 __4 Jan 2023__
 
